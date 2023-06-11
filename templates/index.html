@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/3a2eaf6206.js"></script>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <title>Melanoma Detection</title>
+</head>
+<body>
+
+    <div class="header">
+        <a href="#" class="logo">Melanoma</a>
+        <div class="header-right">
+            <a href="#" class="active">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    
+    <div class="background">
+        <h1 class="title">Melanoma Detection System using CNN</h1>
+        <div class="imgUpload">
+            <form action="/submit" class="form-horizontal" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="pwd" class="text">Upload your Image</label>
+                    <div>
+                        <input type="file" name="my_image" id="pwd" class="upload-label">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+
+        {% if prediction %}
+        <img src="{{ url_for('static', filename='images/' + file_name)}}" alt="Uploaded image">
+        <h2>The predicted image is: <i> {{prediction}} </i></h2>
+
+        {% endif %}
+
+    </div>
+
+</body>
+</html>

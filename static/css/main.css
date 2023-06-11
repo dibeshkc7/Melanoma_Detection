@@ -1,0 +1,111 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+body{
+    background: rgba(255, 12, 2, 0.35);
+    background-image: url('u.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 12, 2, 0.33);
+}
+
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.header .logo{
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.header-right{
+    float: right;
+}
+
+.header .header-right .active{
+    background-color: hsla(70, 17%, 26%, 0.8);
+    color: hsl(78, 100%, 49%);
+}
+
+.header:hover a:hover{
+    color: hsl(78, 100%, 49%);
+    box-shadow: 0.2px 0 0 currentColor;
+}
+
+.title{
+    margin-top: 80px;
+}
+
+.imgUpload{
+    text-align: center;
+    padding: 3%;
+    border: thin solid white;
+}
+
+.text{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(2, 255, 112);
+}
+
+.upload-label {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 5px;
+    background: hsla(0, 100%, 35%, 0.8);
+    color: #fff;
+    font-size: 25px;
+    transition: all .4s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.upload-label:hover {
+    background: #34495E;
+    color: #39D2B4;
+}
+
+button{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 5px;
+    background: hsla(0, 100%, 35%, 0.8);
+    color: #f1f1f1;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover{
+    color: #39D2B4;
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    object-fit: fill;
+}
